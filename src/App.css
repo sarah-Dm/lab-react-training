@@ -39,6 +39,7 @@
 
 .box {
   display: flex;
+  flex-direction: column;
   align-items: center;
   border: 1px solid black;
 }
@@ -49,7 +50,11 @@
   height: 300px;
 }
 
-.rating {
+.align-left {
   margin: 10px;
   text-align: left;
+}
+
+.hide {
+  display: none;
 }

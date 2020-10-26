@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Rating(props) {
-  let rating = Math.floor(props.children);
+  let rating = Math.round(props.children);
   console.log(rating);
   let etoile;
   if (rating === 0) {
@@ -23,9 +23,9 @@ function Rating(props) {
     etoile = '★★★★★';
   }
   return (
-    <div className="rating">
-      {props.children}
-      {etoile}
+    <div className="align-left">
+      <div className="hide">{props.children}</div>
+      <div>{etoile}</div>
     </div>
   );
 }
