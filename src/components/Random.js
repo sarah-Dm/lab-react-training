@@ -11,9 +11,6 @@ function Random(props) {
       <p>Min was {props.min} and max was {props.max}, Random Number is {randomNum}</p>
     </div>
 
-
-
-
   )
 
 
